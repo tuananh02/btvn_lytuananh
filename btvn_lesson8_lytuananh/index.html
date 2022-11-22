@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        //01
+        for(var i=1;i<=10;i++){
+            if (i%2==0){
+                console.log(i);
+            }
+        };
+        //02
+        
+        
+       
+        //05
+        let text="////laptrinh//////code//////javascript/////";
+        let newText=text.replaceAll("/","");
+        console.log(newText.replace("code","/code/"));
+        //03
+        var myArray=[2,1,7,2,6,9,1,99,12,56];
+        
+
+        for (var i = 1; i < myArray.length; i++)
+            for (var j = 0; j < i; j++)
+                if (myArray[i] < myArray[j]) {
+                var x = myArray[i];
+                myArray[i] = myArray[j];
+                myArray[j] = x;
+                }
+
+            console.log(myArray);
+
+        //04
+        console.log(myArray.reverse())
+         
+
+
+        
+    </script>
+</body>
+</html>
