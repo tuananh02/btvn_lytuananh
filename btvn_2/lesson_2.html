@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 2</title>
+</head>
+<body>
+    <p>
+        //Cau 1 : False
+        //Cau 2: True
+        //Cau 3: True
+        //Cau 4: 3
+        //Cau 5: 4
+        //Cau 6: 1
+        //Cau 7: 3
+        //Cau 8: 2
+        //Cau 9: 1
+        //Cau 10: 2
+        //Cau 11: 1
+        //Cau 12: 2
+        //Cau 13:4
+    </p>
+    <script>
+        function reverseString(a){
+            return a.split("").reverse().join("");
+
+        }
+        console.log(reverseString("abcdef"))//01
+        
+        let myArray =[1, 2, 3, 5, 4, 2, 6, 4]
+        let myset =new Set(myArray);
+        let result = Array.from(myset);
+        console.log(result);//02
+
+        function array1(array){  //03
+            array.sort()
+            let max =[0,0]
+            let count =1;
+            for (let i=array.length-1;i>0;--i){
+                if(array[i]==array[i-1]){
+                    ++count;
+                }
+                else{
+                    if(max[1]<count){
+                        max[0]=array[i];
+                        max[1]=count;
+                    }
+                    count=1;
+                
+                }
+                
+            }
+            return {value: max[0],count: max[1]}
+
+        }
+        console.log(array1([1, 2, 3, 5, 6, 4, 2, 1, 6, 3, 5, 3]))
+
+
+
+
+
+    </script>
+
+</body>
+</html>
